@@ -19,11 +19,17 @@ Random Forest Regressor
 
 Evaluation Metrics
 Model	R² Score	MAE	MSE	RMSE
+
 XGBoost	0.9987	1.5526	5.2755	2.2969
+
 Linear Regression	0.9656	8.4791	138.1241	11.7526
+
 Decision Tree	0.9923	3.5110	30.7877	5.5487
+
 Random Forest	0.9977	1.8182	9.4009	3.0661
+
 Sample Predictions (first 10):
+
 XGBoost: [197.07, 70.87, 196.99, 16.84, 72.88, 23.10, 5.07, 147.86, 255.70, 6.91]
 
 Linear Regression: [198.81, 80.44, 194.41, 17.39, 78.97, 15.28, -0.34, 146.16, 209.87, -1.10]
