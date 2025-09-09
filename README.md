@@ -35,22 +35,22 @@ Random Forest: [196.87, 67.01, 197.11, 16.97, 73.24, 23.44, 5.26, 146.07, 256.74
 📊 Visualizations
 Residuals Plot for XGBoost (Best Model)
 Most errors are around zero, confirming superior accuracy, low bias, and high predictive power.
-![Residuals Plot - XGBoost](./Visualizations/residuals_plot_xgboost.png)
+![Residuals Plot - XGBoost](./Visualizations/residuals_plot_xgboost.jpg)
 
 
 Residuals Plot for Linear Regression
 Wider error dispersal with larger outliers, consistent with lower model performance on this nonlinear dataset.
-![Residuals Plot - Linear Regression](./screenshots/residuals_plot_linear.png)
+![Residuals Plot - Linear Regression](./Visualizations/residuals_plot_linear.jpg)
 
 
 Residuals Plot for Decision Tree
 Sharp peak with some error spread, indicating good fit but less precision than ensemble models.
-![Residuals Plot - Decision Tree](./screenshots/residuals_plot_tree.png)
+![Residuals Plot - Decision Tree](./Visualizations/residuals_plot_tree.jpg)
 
 
 Residuals Plot for Random Forest
 Tight clustering and minimal outliers—performance slightly below XGBoost but clearly superior to non-ensemble models.
-![Residuals Plot - Random Forest](./screenshots/residuals_plot_forest.png)
+![Residuals Plot - Random Forest](./Visualizations/residuals_plot_forest.jpg)
 
 
 🚀 Getting Started
