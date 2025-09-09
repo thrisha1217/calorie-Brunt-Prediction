@@ -1,32 +1,35 @@
 **Calorie Brunt Prediction Using ML Algorithms**
 
 
-This project predicts the calories burned based on exercise data using multiple machine learning models. The goal is to provide a data-driven way to estimate calorie expenditure during workouts.
 
-It uses Python, Pandas, Seaborn, and Scikit-learn to preprocess data, perform exploratory data analysis (EDA), and build predictive models.
+This project predicts calories burned based on exercise data using multiple machine learning models.
+It demonstrates data preprocessing, exploratory data analysis (EDA), model training, and evaluation in a structured workflow.
 
 📂 Dataset
 
 The project uses two datasets:
 
-Calories Dataset (calories.csv): Contains calories burned information for users.
+Calories Dataset (calories.csv) – contains calories burned information.
 
-Exercise Dataset (exercise.csv): Contains exercise details such as duration, heart rate, and other parameters.
+Exercise Dataset (exercise.csv) – contains exercise details like duration, heart rate, and more.
 
-The datasets are merged to form the training data for machine learning models.
-
-Note: The column User_ID is removed and Gender is converted to dummy variables for modeling.
+These datasets are merged, with unnecessary columns removed, and Gender converted to dummy variables for modeling.
 
 ⚙️ Features
-🔎 Exploratory Data Analysis (EDA)
+🔎 Exploratory Data Analysis
 
 Visualize distributions of numerical features.
 
-Generate a correlation heatmap to identify relationships between features.
+Plot a correlation heatmap to understand relationships between features.
+
+Example EDA Screenshots:
+
+![Distribution Plot](./screenshots/distribution_plot.png)
+![Correlation Heatmap](./screenshots/correlation_heatmap.png)
 
 🧠 Predictive Modeling
 
-The project trains multiple regression models to predict calories burned:
+Models trained:
 
 XGBoost Regressor
 
@@ -36,48 +39,56 @@ Decision Tree Regressor
 
 Random Forest Regressor
 
-For each model, the following metrics are computed:
+Evaluation Metrics for each model:
 
-R² Score
+Model	R² Score	MAE	MSE	RMSE
+XGBoost	0.9987	1.5526	5.2755	2.2969
+Linear Regression	0.9656	8.4791	138.1241	11.7526
+Decision Tree	0.9923	3.5110	30.7877	5.5487
+Random Forest	0.9977	1.8182	9.4009	3.0661
 
-Mean Absolute Error (MAE)
+Sample Predictions (first 10 values):
 
-Mean Squared Error (MSE)
+XGBoost: [197.06581, 70.867226, 196.99498, 16.840124, 72.875145, 23.09963, 5.074159, 147.85599, 255.69847, 6.907859]
 
-Root Mean Squared Error (RMSE)
+Linear Regression: [198.81182363, 80.43555305, 194.40940033, 17.39285622, 78.9692843, 15.28475163, -0.3413037, 146.15851941, 209.87196487, -1.10270603]
 
-Residuals of predictions are also visualized to understand model performance.
+Decision Tree: [194., 75., 204., 17., 72., 24., 5., 148., 253., 7.]
+
+Random Forest: [196.87, 67.01, 197.11, 16.97, 73.24, 23.44, 5.26, 146.07, 256.74, 6.88]
+
+Best Model: XGBoost
+Best R² Score: 0.9987
+
+📊 Visualizations
+
+Distribution of Features
+
+Correlation Heatmap
+
+Residuals Plot for Best Model
+
+(Include your screenshots like this)
+
+![Residuals Plot](./screenshots/residuals_plot.png)
 
 🚀 Getting Started
 🔧 Requirements
-
-Install the required Python libraries:
-
 pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 
 ▶️ Run the Script
-python Calorie_Brunt_code.py
+python ddpa(CODE).py
 
 
 This will:
 
-Load and merge the datasets.
+Load and merge datasets.
 
-Perform EDA with distribution plots and a correlation heatmap.
+Perform EDA with distribution plots and correlation heatmap.
 
-Train multiple regression models and evaluate their performance.
+Train multiple regression models and evaluate performance.
 
-Display predictions and residual plots.
-
-Print the best-performing model and its R² score.
-
-📊 Visualizations
-
-Distributions: Histograms of numerical features with KDE.
-
-Correlation Heatmap: Shows relationships between features.
-
-Residuals Plot: Distribution of prediction errors for each model.
+Display predictions, residuals, and the best-performing model.
 
 👩‍💻 Tech Stack
 
@@ -89,6 +100,10 @@ Visualization: Matplotlib, Seaborn
 
 Machine Learning: Scikit-learn, XGBoost
 
+
 🙌 Contributors
 
 Thrisha Reddy J
+
+
+
