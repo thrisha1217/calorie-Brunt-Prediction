@@ -1,5 +1,4 @@
-**Calorie Brunt Prediction Using ML Algorithms
-**
+**Calorie Brunt Prediction Using ML Algorithms**
 This project predicts the calories burned based on exercise data using multiple machine learning models. The goal is to provide a data-driven way to estimate calorie expenditure during workouts.
 
 It uses Python, Pandas, Seaborn, and Scikit-learn to preprocess data, perform exploratory data analysis (EDA), and build predictive models.
