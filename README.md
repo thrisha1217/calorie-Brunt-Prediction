@@ -35,7 +35,7 @@ Random Forest: [196.87, 67.01, 197.11, 16.97, 73.24, 23.44, 5.26, 146.07, 256.74
 📊 Visualizations
 Residuals Plot for XGBoost (Best Model)
 Most errors are around zero, confirming superior accuracy, low bias, and high predictive power.
-![Residuals Plot - XGBoost](./screenshots/residuals_plot_xgboost.png)
+![Residuals Plot - XGBoost](./Visualizations/residuals_plot_xgboost.png)
 
 
 Residuals Plot for Linear Regression
